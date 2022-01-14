@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Vidaloka&display=swap');
+
+body{
+    background-color: rgb(231, 229, 226);
+    font-family: 'Vidaloka', serif;
+}
+.container{
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+}
