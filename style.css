@@ -2,11 +2,316 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Vidaloka&display=swap');
 
 body{
-    background-color: rgb(231, 229, 226);
+    background-color: rgb(243, 239, 239);
     font-family: 'Vidaloka', serif;
 }
 .container{
-    width: 90%;
-    background-color: white;
+    max-width: 80%;
+    background-color: rgb(243, 239, 239);
+    margin: 0 auto;
+    padding-top: 40px;
+}
+/* header section code start */
+.header-section{
+    display: flex;
+    
+    
+}
+.header-section-title{
+    font-size: 18px;
+    text-align: left;
+   
+}
+.header-section-1{
+    width: 40%;
+    padding-top: 50px;
+}
+.header-section-1 h2{
+    font-size: 38px;
+    font-weight: 700;
+    padding: 0px;
+}
+.header-section-1 p{
+    font-size: 12px;
+    font-weight: 550;
+    padding: 0px 0px 10px 0px;
+}
+.header-section-2{
+    width: 50%;
+}
+.header-section-2 img{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.header-section button{
+    background-color: rgb(192, 93, 11);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight:700;
+    border: 1px solid black;
+}
+.header-section button:hover{
+    transform: scale(2) rotate(360deg);
+    transition: transform 5s ease-in-out;
+}
+.header-section button i{
+    margin-left: 10px;
+}
+
+/* gallery section code start */
+.gallery-section{
+    width: 75%;
     margin: 0 auto;
 }
+.gallery-album{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.gallery-title{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+.img-details .img-title{
+    font-size: 18px;
+    margin-top: -1px;
+}
+.img-details img-price{
+    font-size: 18px;
+    margin-top: -1px;
+}
+.ratting span{
+    margin-left: 5px;
+    font-size: 10px;
+    margin-top: 0px;
+
+}
+.icon i{
+    margin-right: 2px;
+}
+.ratting .icon{
+    margin-top: -8px;
+    color: rgb(255, 221, 71);
+    font-size: 7px;
+    padding-right: 2px;
+      
+}
+.icon span{
+    color: black;
+}
+
+.gallery{
+    width: 230px;
+    background-color: white;
+    padding: 10px;
+    
+}
+.gallery img{
+    width: 230px;
+}
+.sub-title p{
+   
+    font-size: 11px;
+    line-height: 5px;
+    text-align: left;
+
+}
+.new-button{
+    color: rgb(192, 93, 11);
+    text-align: right;
+    align-items: center;
+   
+}
+.new-icon{
+    margin-left: 5px;
+    align-items: center;
+}
+
+/* footer section code start */
+footer{
+    background-color: rgb(26, 1, 1);
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+footer span img{
+    width: 10px;
+}
+
+/* media querry code start */
+
+/* footer section code end */
+
+
+
+
+/* gallery section code end */
+
+/* media querry code start */
+@media screen and (max-width: 992px) {
+  
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  
+  @media screen  and (max-width:700px){
+    .container{
+        max-width: 80%;
+        background-color: rgb(243, 239, 239);
+        margin: 0 auto;
+        padding:50px;
+
+    }
+    .gallery-title{
+        margin-top: 70px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .gallery-album{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        background-color: rgb(26, 1, 1);
+        text-align: center;
+        color: white;
+        padding: 30px;
+        margin-top: 50px;
+        width:700px;
+    }
+    footer span img{
+        width: 10px;
+    }
+    .gallery-title{
+        text-align:right;
+        font-size: 40px;
+    }
+    .gallery-section{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .gallery{
+        width: 300px;
+        background-color: white;
+        padding: 10px;
+        
+    }
+    .gallery img{
+        width: 300px;
+    }
+  }
+/* media querry code end */
+
+
+
+
+
+/* jgkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+@media screen and (max-width:400px) {
+    .container{
+        width: 100%;
+    }
+    .header-section-title{
+        text-align: center;
+    } 
+    .header-section{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+    .header-section-1{
+        width: 400px;
+        text-align: center;
+    }
+    .header-section-2{
+        text-align: center;
+        width: 100%;
+    }
+    .header-section-2 img{
+        width: 300px;
+        margin-top: 50px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .gallery-album{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallery-section{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .gallery{
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .img-details .img-title{
+        font-size: 40px;
+        margin-top: -1px;
+        font-weight: 500;
+    }
+
+    .img-details .img-price{
+        font-size: 25px;
+        margin-top: -10px;
+        font-weight: 500;
+    }
+    .ratting span{
+        margin-left: 5px;
+        font-size: 10px;
+        margin-top: 0px;
+    
+    }
+    .ratting .icon{
+        margin-top: -8px;
+        color: rgb(255, 221, 71);
+        font-size: 13px;
+        padding-right: 10px;
+          
+    }
+    .icon i{
+        margin-right: 4px;
+    }
+    .icon span{
+        color:rgb(14, 12, 4);
+        font-size: 13px;
+        
+        
+    }
+    .new-button{
+        color: rgb(192, 93, 11);
+        text-align: right;
+        align-items: center;
+        margin-right: -18px;
+    }
+    .new-icon{
+        margin-left: 5px;
+        align-items: center;
+    }
+    .sub-title p{
+   
+        font-size: 20px;
+        line-height: 5px;
+        text-align: left;
+    
+    }
+    footer{
+        width: 400px;
+    }
+  
+  }
