@@ -303,7 +303,6 @@ footer span img{
         width: 10px;
     }
     .extra-section{
-        
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 20px;
@@ -314,25 +313,15 @@ footer span img{
      
      }
      .testimonialone{
-         width:400px !important;
+         width:400px;
          margin-top: 30px;
          text-align: center;
          overflow: hidden;
          margin-right: 10px;
          
      }
-     .testimonial{
-        width:400px !important;
-         margin-top: 30px;
-         text-align: center; 
-         overflow: hidden;
- 
-     }
-     .testimonial img{
-         width: 100px;
-         height: 100px;
-         border-radius: 50%;
-     }
+   
+    
      .testimonialone img{
          width: 100px;
          height: 100px;
@@ -353,7 +342,7 @@ footer span img{
          margin-bottom: 10px;
      }
      .comment{
-         width: 50%;
+         width: 300px;
          margin: 20px;
          height: auto;
          border: 1px solid orange;
@@ -411,7 +400,7 @@ footer span img{
         text-align: center;
         color: white;
         
-        width:100%;
+        width: 100% !important;;
     }
     footer span img{
         width: 10px;
@@ -492,6 +481,9 @@ footer span img{
     .comment p{
         padding: 10px;
     }
+    .footer{
+        width:700px;
+    }
     
   }
 /* media querry code end */
@@ -506,7 +498,8 @@ footer span img{
         width: 80%;
     }
     .header-section-title{
-        text-align: center;
+        text-align: right;
+        margin-right: 70px;
     } 
     .header-section{
         display: flex;
@@ -515,7 +508,8 @@ footer span img{
     }
     .header-section-1{
         width: 320px;
-        text-align: center;
+        
+        margin-left: 40px;
     }
     .header-section-2{
         text-align: center;
@@ -607,6 +601,7 @@ footer span img{
    display: flex;
    flex-direction: column;
    text-align: center;
+   margin-right: 40px;
   
   
 
@@ -615,18 +610,10 @@ footer span img{
     width: 400px;
     margin-top: 30px;
     text-align: center;
+    margin-right: 40px;
     
 }
-.testimonial{
-    width: 400px;
-    margin-top: 30px;
-    text-align: center;  
-}
-.testimonial img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
+
 .testimonialone img{
     width: 100px;
     height: 100px;
@@ -635,14 +622,14 @@ footer span img{
 .testimonialone i{
     font-size: 30px;
     color: rgb(204, 197, 184);
-    margin-right: 30px;
+    margin-right: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .testimonial i{
     font-size: 30px;
     color: rgb(204, 197, 184);
-    margin-right: 30px;
+    margin-right: -40px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -652,6 +639,7 @@ footer span img{
     border: 1px solid orange;
     text-align: center;
     border-radius: 40px;
+    margin-right: -40px;
 
     background-color: white;
     box-shadow: 10px 10px 10px gray;
@@ -660,9 +648,6 @@ footer span img{
 
    /* testimonial code end */
 
-    footer{
-        width: 500px;
-        
-    }
+  
   
   }
